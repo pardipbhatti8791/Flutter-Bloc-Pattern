@@ -13,7 +13,7 @@ class Validators {
     }
   );
 
-  final validatePassword =StreamTransformer<String, String>.fromHandlers(
+  final validatePassword = StreamTransformer<String, String>.fromHandlers(
     handleData: (password, sink) {
       if(password.length > 3) {
         sink.add(password);
